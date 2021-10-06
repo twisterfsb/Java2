@@ -1,15 +1,15 @@
 import java.util.Scanner;
 public class Homework1 {
     public static void main(String[] args) {
-        System.out.println("------------------------");
+        System.out.println("-----------------------");
         printThreeWords();
-        System.out.println("------------------------");
+        System.out.println("-----------------------");
         checkSumSign();
-        System.out.println("------------------------");
+        System.out.println("-----------------------");
         printColor();
-        System.out.println("------------------------");
+        System.out.println("-----------------------");
         compareNumbers();
-        System.out.println("------------------------");
+        System.out.println("-----------------------");
     }
 
     static void printThreeWords() {
