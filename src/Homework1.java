@@ -35,10 +35,10 @@ public class Homework1 {
         Scanner iv = new Scanner(System.in);
             System.out.print("Введите число: ");
         int value = iv.nextInt();
-        if (value <= 0){
-            System.out.println("Красный");
-        } else if (value > 0 && value <= 100 ){
+        if (value <= 100 && value > 0){
             System.out.println("Желтый");
+        } else if (value <= 0) {
+            System.out.println("Красный");
         } else {
             System.out.println("Зеленый");
         }
