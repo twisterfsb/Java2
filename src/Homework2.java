@@ -24,7 +24,7 @@ public class Homework2 {
         }
     }
     static void inVisYear(int year) {
-               if (!(year % 4 == 0) || ((year % 100 == 0) && !(year % 400 == 0)))
+        if (!(year % 4 == 0) || ((year % 100 == 0) && !(year % 400 == 0)))
             System.out.println(year + " г. не високосный");
         else System.out.println(year + " г. високосный");
     }
