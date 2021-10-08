@@ -4,11 +4,11 @@ public class Homework2 {
         inPosNeg(-5);
         System.out.println(inTrueFalse(5));
         inStr("Тестовый тест", 5);
-        inVisYear(2001);
+        System.out.println(inVisYear(2001));
     }
     static boolean inTwoNum (int a, int b) {
         int sum = a + b;
-        return sum > 10 && sum <= 20;
+        return sum >= 10 && sum <= 20;
     }
     static void inPosNeg (int a) {
         if (a < 0)
@@ -16,16 +16,14 @@ public class Homework2 {
         else System.out.println("Positive");
     }
     static boolean inTrueFalse (int a) {
-        return !(a > 0);
+        return a < 0;
     }
     static void inStr (String str, int n) {
         for (int i = 1; i <= n; i++) {
-            System.out.println("[" + i + "]" + " " + str);
+            System.out.println(str);
         }
     }
-    static void inVisYear(int year) {
-        if (!(year % 4 == 0) || ((year % 100 == 0) && !(year % 400 == 0)))
-            System.out.println(year + " г. не високосный");
-        else System.out.println(year + " г. високосный");
+    static boolean inVisYear(int year) {
+        return ((year % 4 == 0) || (!(year % 100 == 0) && (year % 400 == 0)));
     }
 }
