@@ -7,7 +7,7 @@
 public class Homework2 {
     public static void main(String[] args) {
         System.out.println(inTwoNum(5,10));
-        inPosNeg(-5);
+        inPosNeg(-4);
         System.out.println(inTrueFalse(5));
         inStr("Тестовый тест", 5);
         System.out.println(inVisYear(2001));
@@ -17,9 +17,7 @@ public class Homework2 {
         return sum >= 10 && sum <= 20;
     }
     static void inPosNeg (int a) {
-        if (a < 0)
-            System.out.println("Negative");
-        else System.out.println("Positive");
+        System.out.println(a < 0 ? "Negative" : "Positive");
     }
     static boolean inTrueFalse (int a) {
         return a < 0;
