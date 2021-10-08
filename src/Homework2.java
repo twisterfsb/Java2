@@ -1,3 +1,9 @@
+/*
+ * Java1. Homework2
+ *
+ * @author Zhuravlev.k
+ * @version 08.10.2021
+ */
 public class Homework2 {
     public static void main(String[] args) {
         System.out.println(inTwoNum(5,10));
