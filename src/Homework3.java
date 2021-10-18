@@ -1,5 +1,5 @@
 /*
- * Java1. Homework2
+ * Java1. Homework3
  *
  * @author Zhuravlev.k
  * @version 18.10.2021
