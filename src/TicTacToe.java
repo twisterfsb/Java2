@@ -14,7 +14,7 @@ public class TicTacToe {
     final int TO_WIN = 4; // количество маркеров в линию для победы
     final char SIGN_X = 'X'; // маркер игрока
     final char SIGN_O = 'O'; // маркер компьютера
-    final char SIGN_EMPTY = '•'; // маркер свободной клетки
+    final char SIGN_EMPTY = '\u2022'; // маркер свободной клетки "•"
     char[][] table;
     Random random;
     Scanner scanner;
