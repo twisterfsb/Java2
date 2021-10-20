@@ -93,8 +93,8 @@ public class TicTacToe {
     // Ход компьютера
     void turnAi() {
         // Поиск победного хода компьютера
-        for (int i = 0; i < SIZE_Y; i++)
-            for (int j = 0; j < SIZE_X; j++) {
+        for (int i = 0; i < SIZE_X; i++)
+            for (int j = 0; j < SIZE_Y; j++) {
                 if (isCellValid(i, j)) {
                     setDot(i, j, SIGN_O);
                     if (isWin(SIGN_O)) return;
@@ -102,8 +102,8 @@ public class TicTacToe {
                 }
             }
         // Проверяем будет ли следующий ход игрока победным
-        for (int i = 0; i < SIZE_Y; i++)
-            for (int j = 0; j < SIZE_X; j++) {
+        for (int i = 0; i < SIZE_X; i++)
+            for (int j = 0; j < SIZE_Y; j++) {
                 if (isCellValid(i, j)) {
                     setDot(i, j, SIGN_X);
                     if (isWin(SIGN_X)) {
