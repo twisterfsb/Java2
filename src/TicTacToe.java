@@ -128,16 +128,16 @@ public class TicTacToe {
         if (x < 0 || y < 0 || x > SIZE_X - 1 || y > SIZE_Y - 1) {
             return false;
         }
-        return table [x][y] == SIGN_EMPTY;
+        return table[x][y] == SIGN_EMPTY;
     }
 
     // Проверка на победу
     boolean isWin(char dot) {
         for (int i = 0; i < SIZE_X; i++) {
             for (int j = 0; j < SIZE_Y; j++) {
-                if (checkLine(i, j, 1, 0,  dot)) return true;  // Проверим линию по х
-                if (checkLine(i, j, 1, 1,  dot)) return true;  // Проверим по диагонали х у
-                if (checkLine(i, j, 0, 1,  dot)) return true;  // Проверим линию по у
+                if (checkLine(i, j, 1, 0, dot)) return true;  // Проверим линию по х
+                if (checkLine(i, j, 1, 1, dot)) return true;  // Проверим по диагонали х у
+                if (checkLine(i, j, 0, 1, dot)) return true;  // Проверим линию по у
                 if (checkLine(i, j, 1, -1, dot)) return true;  // Проверим по диагонали х -у
             }
         }
