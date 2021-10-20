@@ -5,8 +5,6 @@
  * @version 21.10.2021
  */
 
-import org.w3c.dom.ls.LSInput;
-
 import java.util.Random;
 import java.util.Scanner;
 
