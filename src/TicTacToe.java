@@ -90,9 +90,9 @@ public class TicTacToe {
         setDot(x, y, SIGN_X);
     }
 
-    // Ход ИИ
+    // Ход компьютера
     void turnAi() {
-        // Ищем выигрышный ход компьютера
+        // Поиск победного хода компьютера
         for (int i = 0; i < SIZE_Y; i++)
             for (int j = 0; j < SIZE_X; j++) {
                 if (isCellValid(i, j)) {
