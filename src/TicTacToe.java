@@ -92,7 +92,6 @@ public class TicTacToe {
 
     // Ход ИИ
     void turnAi() {
-
         // Ищем выигрышный ход компьютера
         for (int i = 0; i < SIZE_Y; i++)
             for (int j = 0; j < SIZE_X; j++) {
@@ -102,7 +101,6 @@ public class TicTacToe {
                     setDot(i, j, SIGN_EMPTY);
                 }
             }
-
         // Проверяем будет ли следующий ход игрока победным
         for (int i = 0; i < SIZE_Y; i++)
             for (int j = 0; j < SIZE_X; j++) {
@@ -115,7 +113,6 @@ public class TicTacToe {
                     setDot(i, j, SIGN_EMPTY);
                 }
             }
-
         // Если следующий ход не выигрышный, то ставим на рандомное свободное поле
         int x, y;
         do {
