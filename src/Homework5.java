@@ -9,15 +9,15 @@ public class Homework5 {
 
     public static void main(String[] args) {
         Person[] personDB = new Person[7];
-        personDB[0] = new Person("Жарков Алексей Алексеевич", "Техдир", "zharkov.a@mail.ru", "+7999111222333", 100000 , 39);
-        personDB[1] = new Person("Журавлев Андрей Михайлович", "Аналитик", "zhuravlev.a@mail.ru", "+79882223344", 90000 , 24);
-        personDB[2] = new Person("Железняков Михаил Анатольевич", "Электромонтер", "zheleznyakov.m@mail.ru", "+79773334455", 70000 , 37);
-        personDB[3] = new Person("Солянкина Ксения Владимировна", "Контроллер ОТК", "solyankina.k@mail.ru", "+79664445566", 60000 , 27);
-        personDB[4] = new Person("Мотовилова Александра Максимовна", "Гендир", "motovilova.a@mail.ru", "+79555556677", 120000 , 46);
-        personDB[5] = new Person("Дмитриев Владимир Антонович", "Менеджер по развитию", "dmitriev.v@mail.ru", "+79446667788", 80000 , 41);
-        personDB[6] = new Person("Буржев Сергей Александрович", "Ковырятель в носу", "burzhuev.s@mail.ru", "+79337778899", 15000 , 18);
+        personDB[0] = new Person("Жарков Алексей Алексеевич", "Техдир", "zharkov.a@mail.ru", "+7999111222333", 100000, 39);
+        personDB[1] = new Person("Журавлев Андрей Михайлович", "Аналитик", "zhuravlev.a@mail.ru", "+79882223344", 90000, 24);
+        personDB[2] = new Person("Железняков Михаил Анатольевич", "Электромонтер", "zheleznyakov.m@mail.ru", "+79773334455", 70000, 37);
+        personDB[3] = new Person("Солянкина Ксения Владимировна", "Контроллер ОТК", "solyankina.k@mail.ru", "+79664445566", 60000, 27);
+        personDB[4] = new Person("Мотовилова Александра Максимовна", "Гендир", "motovilova.a@mail.ru", "+79555556677", 120000, 46);
+        personDB[5] = new Person("Дмитриев Владимир Антонович", "Менеджер по развитию", "dmitriev.v@mail.ru", "+79446667788", 80000, 41);
+        personDB[6] = new Person("Буржев Сергей Александрович", "Ковырятель в носу", "burzhuev.s@mail.ru", "+79337778899", 15000, 18);
 
-        for (Person item: personDB){
+        for (Person item : personDB) {
             if (item.getAge() > 40) System.out.println(item.personInfo());
         }
     }
