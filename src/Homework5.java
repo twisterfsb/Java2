@@ -31,8 +31,8 @@ class Person {
     private double salary;
     private int age;
 
-    Person(String fio, String position, String email, String phone, double salary, int age) {
-        this.fullName = fio;
+    Person(String fullName, String position, String email, String phone, double salary, int age) {
+        this.fullName = fullName;
         this.position = position;
         this.email = email;
         this.phone = phone;
