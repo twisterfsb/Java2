@@ -48,5 +48,3 @@ class Person {
         return fullName + " || " + position + " || " + email + " || " + phone + " || " + salary + " || " + age;
     }
 }
-
-
