@@ -9,7 +9,7 @@ public class Homework5 {
 
     public static void main(String[] args) {
         Person[] personDB = new Person[7];
-        personDB[0] = new Person("Жарков Алексей Алексеевич", "Техдир", "zharkov.a@mail.ru", "+7999111222333", 100000, 39);
+        personDB[0] = new Person("Жарков Алексей Алексеевич", "Техдир", "zharkov.a@mail.ru", "+79991112223", 100000, 39);
         personDB[1] = new Person("Журавлев Андрей Михайлович", "Аналитик", "zhuravlev.a@mail.ru", "+79882223344", 90000, 24);
         personDB[2] = new Person("Железняков Михаил Анатольевич", "Электромонтер", "zheleznyakov.m@mail.ru", "+79773334455", 70000, 37);
         personDB[3] = new Person("Солянкина Ксения Владимировна", "Контроллер ОТК", "solyankina.k@mail.ru", "+79664445566", 60000, 27);
