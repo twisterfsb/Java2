@@ -17,8 +17,8 @@ public class Homework5 {
         personDB[5] = new Person("Дмитриев Владимир Антонович", "Менеджер по развитию", "dmitriev.v@mail.ru", "+79446667788", 80000, 41);
         personDB[6] = new Person("Буржев Сергей Александрович", "Ковырятель в носу", "burzhuev.s@mail.ru", "+79337778899", 15000, 18);
 
-        for (Person item : personDB) {
-            if (item.getAge() > 40) System.out.println(item.personInfo());
+        for (Person i : personDB) {
+            if (i.getAge() > 40) i.printPerson();
         }
     }
 }
@@ -44,7 +44,11 @@ class Person {
         return age;
     }
 
-    public String personInfo() {
+    public void printPerson() {
+        System.out.println(this);
+    }
+
+    public String toString() {
         return fullName + " || " + position + " || " + email + " || " + phone + " || " + salary + " || " + age;
     }
 }
