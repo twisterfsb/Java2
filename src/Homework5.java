@@ -18,7 +18,7 @@ public class Homework5 {
         personDB[6] = new Person("Буржев Сергей Александрович", "Ковырятель в носу", "burzhuev.s@mail.ru", "+79337778899", 15000, 18);
 
         for (Person i : personDB) {
-            if (i.getAge() > 40) i.printPerson();
+            if (i.getAge() > 40) System.out.println(i);
         }
     }
 }
@@ -42,10 +42,6 @@ class Person {
 
     int getAge() {
         return age;
-    }
-
-    public void printPerson() {
-        System.out.println(this);
     }
 
     public String toString() {
