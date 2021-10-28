@@ -7,10 +7,10 @@
 
 public class Homework6 {
     public static void main(String[] args) {
-        Cat cat1 = new Cat("Черныш");
-        Cat cat2 = new Cat("Огнегрив");
-        Dog dog1 = new Dog("Бусый");
-        Dog dog2 = new Dog("Диваногрыз");
+        Cat cat1 = new Cat("Черныш", 200, 0);
+        Cat cat2 = new Cat("Огнегрив", 200, 0);
+        Dog dog1 = new Dog("Бусый", 500, 10);
+        Dog dog2 = new Dog("Диваногрыз", 500, 10);
 
         IAnimal[] animals = {cat1, cat2, dog1, dog2};
         for (IAnimal animal : animals) {
@@ -32,8 +32,8 @@ interface IAnimal {
 }
 
 class Cat extends Animal {
-    Cat(String name) {
-        super(name, 200, 0);
+    Cat(String name, int limitRun, int limitSwim) {
+        super(name, limitRun, limitSwim);
     }
 
     @Override
@@ -43,8 +43,8 @@ class Cat extends Animal {
 }
 
 class Dog extends Animal {
-    Dog(String name) {
-        super(name, 500, 10);
+    Dog(String name, int limitRun, int limitSwim) {
+        super(name, limitRun, limitSwim);
     }
 }
 
